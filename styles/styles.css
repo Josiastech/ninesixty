@@ -1,0 +1,306 @@
+/* $Id: styles.css,v 1.1.2.2.2.1 2011/01/11 01:08:49 dvessel Exp $ */
+ h1#site-name {
+    margin-bottom: 0;
+}
+#site-header{
+    margin:0px;
+}
+#site-header, #site-subheader, #footer-region, .column, .node, .comment, .block {
+    margin-bottom: 1.5em;
+}
+ul.main-menu, ul.secondary-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.first-time {
+    display: none;
+}
+/* @gray = #2B3E51;
+     @red = #FD4042;
+     @lightGray = #D7DADB;
+     @lightBlue = #6ABCDD;
+     @white = #FFF;*/
+
+/*General Styles*/
+ #first-time {
+    display: none;
+}
+a {
+    color: #2B3E51;
+    font-size: 1em;
+}
+h1 {
+    font-size: 1.3em;
+    color:#6ABCDD;
+}
+h2 {
+    font-size:2.1em;
+    color: #D7DADB;
+}
+a, p, span {
+    color: #2B3E51;
+}
+/* Header */
+ .logo {
+    float: left;
+}
+.top_content {
+    float: left;
+}
+.top_text {
+    float: left;
+    width: 50%;
+}
+.top_text span {
+    text-align: justify;
+}
+.hero {
+    float: left;
+    width: 50%;
+}
+.hero img {
+    width: 100%;
+    /*margin: 10px;*/
+}
+#page {
+    /*width: 100%;*/
+    background: none;
+}
+#branding {
+    display: inline-block;
+    padding: 0 15px;
+}
+#main-content .title {
+}
+.title h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+#main-content #blocks {
+    width: 100%;
+    display: inline-block;
+}
+#main-content #blocks div {
+    width: 30%;
+    display: inline-block;
+    margin: 0 10px;
+}
+#main-content #blocks div h1 {
+    color: #2B3E51;
+    width: 100%;
+    font-size: 2.5em;
+    text-align: center;
+}
+#main-content #blocks div h2 {
+    width: 31%;
+    color: #2B3E51;
+    font-size: 2em;
+    text-align: center;
+    width: 100%;
+}
+#main-content #blocks div span {
+    float: left;
+    font-size: 1em;
+    color: #2B3E51;
+    text-align: justify;
+}
+/**/
+ #main {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+}
+#middle {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-top: 4px solid #2B3E51;;
+    border-bottom: 1px solid #2B3E51;; 
+border-left: 0px;
+border-right: 0px;
+margin-bottom: 45px;
+}
+#middle .title {
+    text-align: center;
+    font-size: 2em;
+}
+.m_container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+top: -63px;
+}
+.m_container div {
+    margin: 0 68px;
+}
+.button {
+    display: inline-block;
+}
+.barchart {
+    width: 100px;
+    height: 100px;
+}
+.chat {
+    width: 100px;
+    height: 100px;
+}
+.mail {
+    width: 100px;
+    height: 100px;
+}
+.user {
+    width: 100px;
+    height: 100px;
+}
+#footer {
+    width: 100%;
+    padding: 0;
+    padding-top: 25px;
+    display: inline-block;
+}
+#footer-region {
+    margin: 0;
+}
+.bottom_image {
+    margin: 0 auto;
+}
+.bottom_image img {
+    width: 100%;
+}
+/* Resposive */
+
+/* Smartphones (portrait) ----------- */
+ @media only screen and (max-width : 320px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .top_content {
+        width: 100%;
+    }
+    .hero img {
+        margin: 10px 0 0 0;
+    }
+    #middle {
+        display: none;
+    }
+    #main-content #blocks div {
+        width: 90%;
+        border-bottom: 1px solid #D7DADB;
+    }
+    #main-content #blocks div span {
+        margin-bottom: 5px;
+    }
+    .block_3 div span {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:480px) {
+    #page {
+        width: 100%;
+        /*background-color:#FFB3B3;*/
+    }
+    .top_content {
+        width: 100%;
+    }
+    .top_text {
+        width: 100%;
+    }
+    .top_text h2 {
+        text-align: center;
+    }
+    .hero {
+        width: 100%;
+    }
+    .m_container {
+        width: 100%;
+        text-align: center;
+    }
+    #main-content #blocks div {
+        width: 29%;
+    }
+    #footer-region {
+        width: 100%;
+        margin: 0;
+    }
+    .bottom_image {
+        width: 90%;
+    }
+}
+/* Smartphones (landscape) ----------- */
+ @media screen and (max-width: 524px) {
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .hero img {
+        margin: 10px 0 0 0;
+    }
+    #middle {
+        display: none;
+    }
+    #main-content #blocks div {
+        width: 90%;
+        border-bottom: 1px solid #D7DADB;
+    }
+    #main-content #blocks div span {
+        margin-bottom: 5px;
+    }
+    .block_3 div span {
+        margin-bottom: 0;
+    }
+}
+@media screen and (min-width: 524px) and (max-width: 700px){
+    #middle{
+        display: none;
+    }
+    .m_container div {
+        display: none;  
+    }
+    #main-content #blocks div{
+        width: 27%;
+    }
+}
+@media screen and (max-width : 800px) {
+    #page {
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+    }
+    .top_content {
+        width: 100%;
+    }
+    .top_text {
+        width: auto;
+    }
+    .hero {
+        width: 100%;
+    }
+    .hero img {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    #main{
+        padding: 0;
+    }
+    #middle {
+        width: 100%;
+    }
+    .m_container div {
+        margin: 0 34px;
+    }
+    #main-content {
+        width: 100%;
+    }
+    #footer {
+        width: 100%;
+    }
+    #footer-region {
+        width: 100%;
+    }
+}
